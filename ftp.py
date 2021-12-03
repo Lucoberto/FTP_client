@@ -1,0 +1,19 @@
+from ftplib import FTP
+
+print('[!] Pasa el [USUARIO] y [CONTRASEÑA] separados por una coma [!]')
+ftplogin= input("login@login#>> ")
+
+#Separa el login por la coma para pasarlo como variable por "ftpconnect"
+separandoElLogin=ftplogin.split(",")
+
+#Conexion con el servidor FTP por defecto
+ftpConnect = FTP('0.0.0.0')
+print('Connected')
+#incia sesion con usuario y contraseña
+ftpConnect.login(user=separandoEllogin[0],passwd=separandoElLogin[1])
+print('loged')
+#Lista el directorio del FTP
+ftpConnect.retrlines('LIST')
+
+
+
