@@ -7,7 +7,7 @@ ftplogin= input("login@login#>> ")
 separandoElLogin=ftplogin.split(",")
 
 #Conexion con el servidor FTP por defecto
-ftpConnect = FTP('furyos.obiterdicta.net')
+ftpConnect = FTP('0.0.0.0')
 print('Connected')
 #incia sesion con usuario y contraseña
 ftpConnect.login(user=separandoElLogin[0],passwd=separandoElLogin[1])
