@@ -1,2 +1,2 @@
 # FTP_client
-Is a little FTP client writed in python
+It is a small FTP client written in Python, it only works for uploading files.
